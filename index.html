@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <title>Raymundo Chávez | Senior Software Consultant (.NET · Azure)</title>
+    <meta
+      name="description"
+      content="Portafolio profesional de Raymundo Chávez. +14 años en el ecosistema Microsoft (.NET, Azure, C#), modernización de legados, microservicios, CQRS/Clean Architecture y liderazgo de equipos."
+    />
+
+    <meta property="og:title" content="Raymundo Chávez | Senior Software Consultant" />
+    <meta
+      property="og:description"
+      content="+14 años en .NET/Azure. Modernización, microservicios, CQRS/Clean Architecture y liderazgo de equipos."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#inicio" aria-label="Inicio">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__text">Raymundo Chávez</span>
+        </a>
+
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+          <span class="sr-only">Abrir menú</span>
+          <span class="nav__burger" aria-hidden="true"></span>
+        </button>
+
+        <div id="navLinks" class="nav__links" data-collapsible>
+          <a href="#acerca">Acerca</a>
+          <a href="#experiencia">Experiencia</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contacto">Contacto</a>
+          <button class="btn btn--ghost" type="button" data-theme-toggle>
+            <span class="btn__icon" aria-hidden="true">◐</span>
+            <span data-theme-label>Tema</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section id="inicio" class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="kicker">Senior Software Consultant</p>
+            <h1>
+              Desarrollo plataformas <span class="text-gradient">.NET/Azure</span> escalables,
+              modernas y seguras.
+            </h1>
+            <p class="lead">
+              +14 años en el ecosistema Microsoft (.NET, Azure, C#). He liderado equipos de hasta 12
+              personas, modernizado sistemas legados a .NET 8 y diseñado arquitecturas cloud-native
+              (CQRS + Clean Architecture) con CI/CD.
+            </p>
+
+            <div class="hero__meta">
+              <div class="pill">
+                <span class="pill__label">Ubicación</span>
+                <span class="pill__value">Monterrey, N.L.</span>
+              </div>
+              <div class="pill">
+                <span class="pill__label">Especialidad</span>
+                <span class="pill__value">Modernización & Microservicios</span>
+              </div>
+              <div class="pill">
+                <span class="pill__label">Enfoque</span>
+                <span class="pill__value">Arquitectura · DevOps · Liderazgo</span>
+              </div>
+            </div>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#contacto">Hablemos</a>
+              <a class="btn btn--secondary" href="./CV-Raymundo-Chavez-2026-2.pdf" target="_blank" rel="noreferrer">
+                Ver CV (PDF)
+              </a>
+            </div>
+
+            <div class="links-row">
+              <a class="link" href="mailto:raymundo.chavez@gmail.com">raymundo.chavez@gmail.com</a>
+              <span class="sep" aria-hidden="true">·</span>
+              <a class="link" href="tel:+525639550314">+52 56 3955 0314</a>
+            </div>
+          </div>
+
+          <aside class="hero__card" aria-label="Resumen en números">
+            <div class="stat">
+              <div class="stat__value">14+</div>
+              <div class="stat__label">Años de experiencia</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">60,000+</div>
+              <div class="stat__label">POS migrados (Win 7 → 10)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__value">12</div>
+              <div class="stat__label">Personas lideradas</div>
+            </div>
+            <div class="card__note">
+              <p>
+                Especializado en modernizar plataformas enterprise hacia .NET 8 y Azure con buenas
+                prácticas de arquitectura y entrega continua.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <div class="hero__bg" aria-hidden="true"></div>
+      </section>
+
+      <section id="acerca" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Acerca de mí</h2>
+            <p class="muted">
+              He trabajado desde el concepto inicial hasta la puesta en producción, con foco en
+              calidad, performance y mantenibilidad.
+            </p>
+          </div>
+
+          <div class="grid-2">
+            <div class="panel">
+              <h3>Lo que hago</h3>
+              <ul class="list">
+                <li>Diseño de soluciones end-to-end (backend, frontend, cloud y DevOps).</li>
+                <li>Modernización: .NET Framework → .NET 8, patrones CQRS y Clean Architecture.</li>
+                <li>Microservicios REST y automatización de CI/CD (Azure DevOps / GitHub Actions).</li>
+                <li>Mentoría, code reviews y liderazgo técnico.</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Highlights</h3>
+              <ul class="list">
+                <li>
+                  Migración de Windows 7→10 en 60,000+ puntos de venta, reduciendo el tiempo de
+                  transición en 60% con una app WPF tipo wizard.
+                </li>
+                <li>
+                  Dashboards para monitoreo de POS (red, apagados, servicios críticos, discos y BD)
+                  en operación 24/7.
+                </li>
+                <li>
+                  Automatización de pólizas contables: de 72 horas a ~30–60 minutos usando T-SQL.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Experiencia</h2>
+            <p class="muted">Roles, impacto y tecnologías clave.</p>
+          </div>
+
+          <div class="timeline" role="list">
+            <article class="timeline__item" role="listitem">
+              <div class="timeline__meta">
+                <div class="timeline__title">Powerstar</div>
+                <div class="timeline__period">07.2025 — Actual</div>
+              </div>
+              <div class="timeline__body">
+                <h3>Líder Técnico · Desarrollador Sr.</h3>
+                <p class="muted">
+                  Plataforma ecommerce tipo carrito de compra para clientes en USA, Venezuela y
+                  Brasil. Arquitectura cloud-native en Azure.
+                </p>
+                <ul class="chips" aria-label="Tecnologías">
+                  <li>.NET 8</li>
+                  <li>Azure</li>
+                  <li>CQRS</li>
+                  <li>Clean Architecture</li>
+                  <li>Microservicios</li>
+                  <li>Angular</li>
+                  <li>Stripe / PayPal</li>
+                  <li>GitHub Actions</li>
+                </ul>
+                <ul class="list list--compact">
+                  <li>Diseñé e implementé arquitectura en Azure (CQRS + Clean) para multi-país.</li>
+                  <li>Template en VS2022 para microservicios con estándares compartidos.</li>
+                  <li>Integración de pagos (Stripe y PayPal).</li>
+                  <li>
+                    Propuesta de ecosistema Azure con prácticas DevOps (CI/CD, Containers, Key Vault,
+                    storage y mensajería).
+                  </li>
+                  <li>Mentoría a desarrolladores junior/middle.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item" role="listitem">
+              <div class="timeline__meta">
+                <div class="timeline__title">Oxxo</div>
+                <div class="timeline__period">2018 — 06.2025</div>
+              </div>
+              <div class="timeline__body">
+                <h3>Líder Técnico · Desarrollador Sr.</h3>
+                <p class="muted">
+                  Retail líder en México con +22,000 tiendas y sistemas críticos 24/7.
+                </p>
+                <ul class="chips" aria-label="Tecnologías">
+                  <li>C#</li>
+                  <li>.NET</li>
+                  <li>WPF</li>
+                  <li>ASP.NET</li>
+                  <li>SQL Server</li>
+                  <li>Azure</li>
+                  <li>TFS/Git</li>
+                </ul>
+                <ul class="list list--compact">
+                  <li>
+                    Migración de 60,000+ POS de Windows 7→10, reduciendo tiempos de transición 60%.
+                  </li>
+                  <li>Dashboards con telemetría de salud/operación de puntos de venta.</li>
+                  <li>Lideré una célula con equipo de hasta 12 personas (dev, QA, SM, PO).</li>
+                  <li>Revisiones diarias de código, liberaciones, mitigación de incidentes.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item" role="listitem">
+              <div class="timeline__meta">
+                <div class="timeline__title">Azzule</div>
+                <div class="timeline__period">2021 — 2023</div>
+              </div>
+              <div class="timeline__body">
+                <h3>Desarrollador Sr.</h3>
+                <p class="muted">
+                  Participación en múltiples clientes: Sygma Alimentos, HEB México, Caintra/Cintermex.
+                </p>
+                <ul class="chips" aria-label="Enfoques">
+                  <li>Arquitectura</li>
+                  <li>Requerimientos</li>
+                  <li>Implementación</li>
+                  <li>Entrega a producción</li>
+                </ul>
+                <ul class="list list--compact">
+                  <li>
+                    HEB México: portal para registro de proveedores y mercancías (arquitectura y
+                    módulos).
+                  </li>
+                  <li>Caintra/Cintermex: portal de proveedores y renta de espacios para eventos.</li>
+                  <li>
+                    Sygma: proyectos internos (activo fijo, visitantes, capacitación y políticas).
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item" role="listitem">
+              <div class="timeline__meta">
+                <div class="timeline__title">Seven Eleven</div>
+                <div class="timeline__period">2016 — 2018</div>
+              </div>
+              <div class="timeline__body">
+                <h3>Desarrollador Sr.</h3>
+                <ul class="chips" aria-label="Tecnologías">
+                  <li>.NET Framework 4.6</li>
+                  <li>C#</li>
+                  <li>ASP.NET</li>
+                  <li>SQL (T-SQL)</li>
+                  <li>JavaScript</li>
+                </ul>
+                <ul class="list list--compact">
+                  <li>
+                    Automatización de póliza contable de nómina (7 empresas): de 3 días a &lt; 1 hora.
+                  </li>
+                  <li>Implementación de SCRUM para ordenar el flujo del equipo.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline__item" role="listitem">
+              <div class="timeline__meta">
+                <div class="timeline__title">AXEN.pro</div>
+                <div class="timeline__period">2011 — 2016</div>
+              </div>
+              <div class="timeline__body">
+                <h3>Desarrollador Sr.</h3>
+                <ul class="chips" aria-label="Tecnologías">
+                  <li>ASP.NET MVC</li>
+                  <li>Web API</li>
+                  <li>.NET Framework</li>
+                  <li>TFS</li>
+                  <li>Bootstrap</li>
+                  <li>jQuery</li>
+                </ul>
+                <ul class="list list--compact">
+                  <li>Proyectos end-to-end con enfoque en mantenibilidad y entrega.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="habilidades" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Habilidades</h2>
+            <p class="muted">Stack técnico y habilidades blandas.</p>
+          </div>
+
+          <div class="grid-3">
+            <div class="panel">
+              <h3>Backend</h3>
+              <ul class="chips chips--wrap" aria-label="Backend">
+                <li>C#</li>
+                <li>.NET 8</li>
+                <li>ASP.NET Core</li>
+                <li>Web API</li>
+                <li>Microservicios REST</li>
+                <li>Azure Functions</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Cloud / Azure</h3>
+              <ul class="chips chips--wrap" aria-label="Cloud Azure">
+                <li>App Service</li>
+                <li>Cosmos DB</li>
+                <li>Key Vault</li>
+                <li>Event Hub</li>
+                <li>Storage</li>
+                <li>Service Bus</li>
+                <li>Containers</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Frontend</h3>
+              <ul class="chips chips--wrap" aria-label="Frontend">
+                <li>Angular (2+)</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vue.js</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="grid-3 mt-16">
+            <div class="panel">
+              <h3>Arquitectura</h3>
+              <ul class="chips chips--wrap" aria-label="Arquitectura">
+                <li>CQRS</li>
+                <li>Clean Architecture</li>
+                <li>DDD</li>
+                <li>Docker</li>
+                <li>CI/CD</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Datos</h3>
+              <ul class="chips chips--wrap" aria-label="Bases de datos">
+                <li>SQL Server</li>
+                <li>Cosmos DB</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3>Soft skills</h3>
+              <ul class="list list--compact">
+                <li>Liderazgo</li>
+                <li>Comunicación efectiva</li>
+                <li>Trabajo en equipo</li>
+                <li>Pensamiento crítico</li>
+                <li>Gestión del tiempo</li>
+                <li>Aprendizaje continuo</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Educación & certificaciones</h2>
+            <p class="muted">Resumen académico y formación relevante.</p>
+          </div>
+
+          <div class="grid-2">
+            <div class="panel">
+              <h3>Educación</h3>
+              <ul class="list">
+                <li>
+                  <strong>Licenciatura en Ingeniería Computacional</strong> (2024) — Titulado por
+                  experiencia.
+                </li>
+                <li><strong>Cédula profesional</strong>: Sí.</li>
+              </ul>
+            </div>
+            <div class="panel">
+              <h3>Formación / cursos</h3>
+              <ul class="list">
+                <li>Desarrollo de microservicios y API REST con .NET 7</li>
+                <li>Azure Big Data</li>
+                <li>Programming in HTML5 with JavaScript and CSS3</li>
+                <li>Developing ASP.NET MVC Web Applications</li>
+                <li>Developing Microsoft Azure and Web Services</li>
+                <li>Angular 19 y ASP.NET Core 9 (en curso / reciente)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="section">
+        <div class="container">
+          <div class="cta">
+            <div class="cta__copy">
+              <h2>¿Buscas un líder técnico para modernizar tu plataforma?</h2>
+              <p class="muted">
+                Puedo ayudarte a diseñar, implementar y operar soluciones con .NET 8 y Azure, desde
+                la arquitectura hasta el delivery con CI/CD.
+              </p>
+              <div class="cta__actions">
+                <a class="btn btn--primary" href="mailto:raymundo.chavez@gmail.com">Enviar email</a>
+                <a class="btn btn--secondary" href="tel:+525639550314">Llamar</a>
+                <a class="btn btn--ghost" href="./CV-Raymundo-Chavez-2026-2.pdf" target="_blank" rel="noreferrer">
+                  Descargar CV
+                </a>
+              </div>
+             
+              <div class="links-row">
+                <a class="link" href="https://github.com/RayChavez" data-placeholder-link>GitHub</a>
+                <span class="sep" aria-hidden="true">·</span>
+                <a class="link" href="https://www.linkedin.com/in/raymundochl/" data-placeholder-link>LinkedIn</a>
+              </div>
+            </div>
+            <div class="cta__card" aria-label="Datos de contacto">
+              <div class="contact-card">
+                <div class="contact-card__row">
+                  <div class="contact-card__k">Email</div>
+                  <div class="contact-card__v">
+                    <a href="mailto:raymundo.chavez@gmail.com">raymundo.chavez@gmail.com</a>
+                  </div>
+                </div>
+                <div class="contact-card__row">
+                  <div class="contact-card__k">Teléfono</div>
+                  <div class="contact-card__v">
+                    <a href="tel:+525639550314">+52 56 3955 0314</a>
+                  </div>
+                </div>
+                <div class="contact-card__row">
+                  <div class="contact-card__k">Ubicación</div>
+                  <div class="contact-card__v">Monterrey, N.L.</div>
+                </div>
+                <div class="contact-card__row">
+                  <div class="contact-card__k">Idioma</div>
+                  <div class="contact-card__v">Español (nativo) · Inglés (intermedio)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <p class="muted small">
+          © <span data-year></span> Raymundo Chávez. Hecho con HTML/CSS/JS.
+        </p>
+        <a class="link small" href="#inicio">Volver arriba</a>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>
