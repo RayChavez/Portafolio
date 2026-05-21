@@ -1,506 +1,673 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#0b1220" />
 
-    <title>Raymundo Chávez | Senior Software Consultant (.NET · Azure)</title>
-    <meta
-      name="description"
-      content="Portafolio profesional de Raymundo Chávez. +14 años en el ecosistema Microsoft (.NET, Azure, C#), modernización de legados, microservicios, CQRS/Clean Architecture y liderazgo de equipos."
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raymundo Chavez - Senior Software Consultant</title>
+    <!-- Modern Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-    <meta property="og:title" content="Raymundo Chávez | Senior Software Consultant" />
-    <meta
-      property="og:description"
-      content="+14 años en .NET/Azure. Modernización, microservicios, CQRS/Clean Architecture y liderazgo de equipos."
-    />
-    <meta property="og:type" content="website" />
+<body>
+    <!-- Floating Aura Lights -->
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+    
+    <!-- Mouse Glow Follower -->
+    <div class="mouse-glow" id="mouse-glow"></div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-
-  <body>
-    <a class="skip-link" href="#contenido">Saltar al contenido</a>
-
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="#inicio" aria-label="Inicio">
-          <span class="brand__dot" aria-hidden="true"></span>
-          <span class="brand__text">Raymundo Chávez</span>
-        </a>
-
-        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
-          <span class="sr-only">Abrir menú</span>
-          <span class="nav__burger" aria-hidden="true"></span>
-        </button>
-
-        <div id="navLinks" class="nav__links" data-collapsible>
-          <a href="#acerca">Acerca</a>
-          <a href="#experiencia">Experiencia</a>
-          <a href="#habilidades">Habilidades</a>
-          <a href="#contacto">Contacto</a>
-          <button class="btn btn--ghost" type="button" data-theme-toggle>
-            <span class="btn__icon" aria-hidden="true">◐</span>
-            <span data-theme-label>Tema</span>
-          </button>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">RC<span>.</span></a>
+            <div class="nav-right">
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#about">Acerca de mí</a></li>
+                        <li><a href="#experience">Trayectoria</a></li>
+                        <li><a href="#architecture">Arquitectura</a></li>
+                        <li><a href="#skills">Tecnologías</a></li>
+                        <li><a href="#education">Educación</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+                <!-- Prominent Download CV for Recruiters -->
+                <a href="CV-Raymundo-Chavez-2026-2.pdf" download="CV_Raymundo_Chavez.pdf" class="btn btn-primary btn-download-cv">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar CV
+                </a>
+                <button class="mobile-menu-btn" aria-label="Abrir Menú">☰</button>
+            </div>
         </div>
-      </nav>
     </header>
 
-    <main id="contenido">
-      <section id="inicio" class="hero">
-        <div class="container hero__grid">
-          <div class="hero__copy">
-            <p class="kicker">Senior Software Consultant</p>
-            <h1>
-              Desarrollo plataformas <span class="text-gradient">.NET/Azure</span> escalables,
-              modernas y seguras.
-            </h1>
-            <p class="lead">
-              +14 años en el ecosistema Microsoft (.NET, Azure, C#). He liderado equipos de hasta 12
-              personas, modernizado sistemas legados a .NET 8 y diseñado arquitecturas cloud-native
-              (CQRS + Clean Architecture) con CI/CD.
-            </p>
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <p class="greeting reveal-up">Ingeniería & Liderazgo de Software</p>
+                    <h1 class="reveal-up delay-1">Raymundo <span>Chavez</span></h1>
+                    <!-- Typewriter Target Subtitle -->
+                    <h2 class="reveal-up delay-2"><span id="typewriter"></span><span class="typed-cursor">|</span></h2>
+                    
+                    <p class="hero-desc reveal-up delay-3">
+                        +14 años de trayectoria diseñando y modernizando sistemas de escala empresarial en el ecosistema <strong>Microsoft (.NET, Azure, C#)</strong>. Especializado en cloud-native, arquitecturas limpias y automatización CI/CD con alto enfoque en valor de negocio.
+                    </p>
+                    
+                    <div class="hero-actions reveal-up delay-4">
+                        <a href="#contact" class="btn btn-primary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            Hablemos
+                        </a>
+                        <a href="CV-Raymundo-Chavez-2026-2.pdf" download="CV_Raymundo_Chavez.pdf" class="btn btn-secondary">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Descargar CV (PDF)
+                        </a>
+                    </div>
 
-            <div class="hero__meta">
-              <div class="pill">
-                <span class="pill__label">Ubicación</span>
-                <span class="pill__value">Monterrey, N.L.</span>
-              </div>
-              <div class="pill">
-                <span class="pill__label">Especialidad</span>
-                <span class="pill__value">Modernización & Microservicios</span>
-              </div>
-              <div class="pill">
-                <span class="pill__label">Enfoque</span>
-                <span class="pill__value">Arquitectura · DevOps · Liderazgo</span>
-              </div>
-            </div>
-
-            <div class="hero__cta">
-              <a class="btn btn--primary" href="#contacto">Hablemos</a>
-              <a class="btn btn--secondary" href="./CV-Raymundo-Chavez-2026-2.pdf" target="_blank" rel="noreferrer">
-                Ver CV (PDF)
-              </a>
-            </div>
-
-            <div class="links-row">
-              <a class="link" href="mailto:raymundo.chavez@gmail.com">raymundo.chavez@gmail.com</a>
-              <span class="sep" aria-hidden="true">·</span>
-              <a class="link" href="tel:+525639550314">+52 56 3955 0314</a>
-            </div>
-          </div>
-
-          <aside class="hero__card" aria-label="Resumen en números">
-            <div class="stat">
-              <div class="stat__value">14+</div>
-              <div class="stat__label">Años de experiencia</div>
-            </div>
-            <div class="stat">
-              <div class="stat__value">60,000+</div>
-              <div class="stat__label">POS migrados (Win 7 → 10)</div>
-            </div>
-            <div class="stat">
-              <div class="stat__value">12</div>
-              <div class="stat__label">Personas lideradas</div>
-            </div>
-            <div class="card__note">
-              <p>
-                Especializado en modernizar plataformas enterprise hacia .NET 8 y Azure con buenas
-                prácticas de arquitectura y entrega continua.
-              </p>
-            </div>
-          </aside>
-        </div>
-        <div class="hero__bg" aria-hidden="true"></div>
-      </section>
-
-      <section id="acerca" class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Acerca de mí</h2>
-            <p class="muted">
-              He trabajado desde el concepto inicial hasta la puesta en producción, con foco en
-              calidad, performance y mantenibilidad.
-            </p>
-          </div>
-
-          <div class="grid-2">
-            <div class="panel">
-              <h3>Lo que hago</h3>
-              <ul class="list">
-                <li>Diseño de soluciones end-to-end (backend, frontend, cloud y DevOps).</li>
-                <li>Modernización: .NET Framework → .NET 8, patrones CQRS y Clean Architecture.</li>
-                <li>Microservicios REST y automatización de CI/CD (Azure DevOps / GitHub Actions).</li>
-                <li>Mentoría, code reviews y liderazgo técnico.</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Highlights</h3>
-              <ul class="list">
-                <li>
-                  Migración de Windows 7→10 en 60,000+ puntos de venta, reduciendo el tiempo de
-                  transición en 60% con una app WPF tipo wizard.
-                </li>
-                <li>
-                  Dashboards para monitoreo de POS (red, apagados, servicios críticos, discos y BD)
-                  en operación 24/7.
-                </li>
-                <li>
-                  Automatización de pólizas contables: de 72 horas a ~30–60 minutos usando T-SQL.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="experiencia" class="section section--alt">
-        <div class="container">
-          <div class="section__head">
-            <h2>Experiencia</h2>
-            <p class="muted">Roles, impacto y tecnologías clave.</p>
-          </div>
-
-          <div class="timeline" role="list">
-            <article class="timeline__item" role="listitem">
-              <div class="timeline__meta">
-                <div class="timeline__title">Powerstar</div>
-                <div class="timeline__period">07.2025 — Actual</div>
-              </div>
-              <div class="timeline__body">
-                <h3>Líder Técnico · Desarrollador Sr.</h3>
-                <p class="muted">
-                  Plataforma ecommerce tipo carrito de compra para clientes en USA, Venezuela y
-                  Brasil. Arquitectura cloud-native en Azure.
-                </p>
-                <ul class="chips" aria-label="Tecnologías">
-                  <li>.NET 8</li>
-                  <li>Azure</li>
-                  <li>CQRS</li>
-                  <li>Clean Architecture</li>
-                  <li>Microservicios</li>
-                  <li>Angular</li>
-                  <li>Stripe / PayPal</li>
-                  <li>GitHub Actions</li>
-                </ul>
-                <ul class="list list--compact">
-                  <li>Diseñé e implementé arquitectura en Azure (CQRS + Clean) para multi-país.</li>
-                  <li>Template en VS2022 para microservicios con estándares compartidos.</li>
-                  <li>Integración de pagos (Stripe y PayPal).</li>
-                  <li>
-                    Propuesta de ecosistema Azure con prácticas DevOps (CI/CD, Containers, Key Vault,
-                    storage y mensajería).
-                  </li>
-                  <li>Mentoría a desarrolladores junior/middle.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline__item" role="listitem">
-              <div class="timeline__meta">
-                <div class="timeline__title">Oxxo</div>
-                <div class="timeline__period">2018 — 06.2025</div>
-              </div>
-              <div class="timeline__body">
-                <h3>Líder Técnico · Desarrollador Sr.</h3>
-                <p class="muted">
-                  Retail líder en México con +22,000 tiendas y sistemas críticos 24/7.
-                </p>
-                <ul class="chips" aria-label="Tecnologías">
-                  <li>C#</li>
-                  <li>.NET</li>
-                  <li>WPF</li>
-                  <li>ASP.NET</li>
-                  <li>SQL Server</li>
-                  <li>Azure</li>
-                  <li>TFS/Git</li>
-                </ul>
-                <ul class="list list--compact">
-                  <li>
-                    Migración de 60,000+ POS de Windows 7→10, reduciendo tiempos de transición 60%.
-                  </li>
-                  <li>Dashboards con telemetría de salud/operación de puntos de venta.</li>
-                  <li>Lideré una célula con equipo de hasta 12 personas (dev, QA, SM, PO).</li>
-                  <li>Revisiones diarias de código, liberaciones, mitigación de incidentes.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline__item" role="listitem">
-              <div class="timeline__meta">
-                <div class="timeline__title">Azzule</div>
-                <div class="timeline__period">2021 — 2023</div>
-              </div>
-              <div class="timeline__body">
-                <h3>Desarrollador Sr.</h3>
-                <p class="muted">
-                  Modernización de sistema legado a .NET 8 y Azure.
-                </p>
-                <ul class="chips" aria-label="Tecnologías">
-                  <li>.NET 8</li>
-                  <li>Azure</li>
-                  <li>CQRS</li>
-                  <li>Clean Architecture</li>
-                  <li>Microservicios</li>
-                  <li>VUE.js</li>
-                  <li>Indexing</li>
-                  <li>Partitioning</li>
-                </ul>
-                <ul class="list list--compact">
-                  <li>Implementación de VUE.js para frontend.</li>
-                  <li>Mejora de performance en base de datos con Indexing y Partitioning.</li>
-                  <li>Implementación de API REST en Azure Functions.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline__item" role="listitem">
-              <div class="timeline__meta">
-                <div class="timeline__title">Seven Eleven</div>
-                <div class="timeline__period">2016 — 2018</div>
-              </div>
-              <div class="timeline__body">
-                <h3>Desarrollador Sr.</h3>
-                <ul class="chips" aria-label="Tecnologías">
-                  <li>.NET Framework 4.6</li>
-                  <li>C#</li>
-                  <li>ASP.NET</li>
-                  <li>SQL (T-SQL)</li>
-                  <li>JavaScript</li>
-                </ul>
-                <ul class="list list--compact">
-                  <li>
-                    Automatización de póliza contable de nómina (7 empresas): de 3 días a &lt; 1 hora.
-                  </li>
-                  <li>Implementación de SCRUM para ordenar el flujo del equipo.</li>
-                </ul>
-              </div>
-            </article>
-
-            <article class="timeline__item" role="listitem">
-              <div class="timeline__meta">
-                <div class="timeline__title">AXEN.pro</div>
-                <div class="timeline__period">2011 — 2016</div>
-              </div>
-              <div class="timeline__body">
-                <h3>Desarrollador Sr.</h3>
-                <p class="muted">
-                  Participación en múltiples clientes: Sygma Alimentos, HEB México, Caintra/Cintermex.
-                </p>
-                <ul class="chips" aria-label="Enfoques">
-                  <li>Arquitectura</li>
-                  <li>Requerimientos</li>
-                  <li>Implementación</li>
-                  <li>Entrega a producción</li>
-                  <li>ASP.NET MVC</li>
-                  <li>Web API</li>
-                  <li>.NET Framework</li>
-                  <li>TFS</li>
-                  <li>Bootstrap</li>
-                  <li>jQuery</li>
-                </ul>
-                <ul class="list list--compact">
-                  <li>Proyectos end-to-end con enfoque en mantenibilidad y entrega.</li>
-                  <li>
-                    HEB México: portal para registro de proveedores y mercancías (arquitectura y
-                    módulos).
-                  </li>
-                  <li>Caintra/Cintermex: portal de proveedores y renta de espacios para eventos.</li>
-                  <li>
-                    Sygma: proyectos internos (activo fijo, visitantes, capacitación y políticas).
-                  </li>
-                </ul>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="habilidades" class="section">
-        <div class="container">
-          <div class="section__head">
-            <h2>Habilidades</h2>
-            <p class="muted">Stack técnico y habilidades blandas.</p>
-          </div>
-
-          <div class="grid-3">
-            <div class="panel">
-              <h3>Backend</h3>
-              <ul class="chips chips--wrap" aria-label="Backend">
-                <li>C#</li>
-                <li>.NET 8</li>
-                <li>ASP.NET Core</li>
-                <li>Web API</li>
-                <li>Microservicios REST</li>
-                <li>Azure Functions</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Cloud / Azure</h3>
-              <ul class="chips chips--wrap" aria-label="Cloud Azure">
-                <li>App Service</li>
-                <li>Cosmos DB</li>
-                <li>Key Vault</li>
-                <li>Event Hub</li>
-                <li>Storage</li>
-                <li>Service Bus</li>
-                <li>Containers</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Frontend</h3>
-              <ul class="chips chips--wrap" aria-label="Frontend">
-                <li>Angular (2+)</li>
-                <li>TypeScript</li>
-                <li>JavaScript</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Vue.js</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="grid-3 mt-16">
-            <div class="panel">
-              <h3>Arquitectura</h3>
-              <ul class="chips chips--wrap" aria-label="Arquitectura">
-                <li>CQRS</li>
-                <li>Clean Architecture</li>
-                <li>DDD</li>
-                <li>Docker</li>
-                <li>CI/CD</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Datos</h3>
-              <ul class="chips chips--wrap" aria-label="Bases de datos">
-                <li>SQL Server</li>
-                <li>Cosmos DB</li>
-              </ul>
-            </div>
-
-            <div class="panel">
-              <h3>Soft skills</h3>
-              <ul class="list list--compact">
-                <li>Liderazgo</li>
-                <li>Comunicación efectiva</li>
-                <li>Trabajo en equipo</li>
-                <li>Pensamiento crítico</li>
-                <li>Gestión del tiempo</li>
-                <li>Aprendizaje continuo</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section--alt">
-        <div class="container">
-          <div class="section__head">
-            <h2>Educación & certificaciones</h2>
-            <p class="muted">Resumen académico y formación relevante.</p>
-          </div>
-
-          <div class="grid-2">
-            <div class="panel">
-              <h3>Educación</h3>
-              <ul class="list">
-                <li>
-                  <strong>Licenciatura en Ingeniería Computacional</strong> (2024) — Titulado por
-                  experiencia.
-                </li>
-                <li><strong>Cédula profesional</strong>: Sí.</li>
-              </ul>
-            </div>
-            <div class="panel">
-              <h3>Formación / cursos</h3>
-              <ul class="list">
-                <li>Desarrollo de microservicios y API REST con .NET 7</li>
-                <li>Azure Big Data</li>
-                <li>Programming in HTML5 with JavaScript and CSS3</li>
-                <li>Developing ASP.NET MVC Web Applications</li>
-                <li>Developing Microsoft Azure and Web Services</li>
-                <li>Angular 19 y ASP.NET Core 9 (en curso / reciente)</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contacto" class="section">
-        <div class="container">
-          <div class="cta">
-            <div class="cta__copy">
-              <h2>¿Buscas un líder técnico para modernizar tu plataforma?</h2>
-              <p class="muted">
-                Puedo ayudarte a diseñar, implementar y operar soluciones con .NET 8 y Azure, desde
-                la arquitectura hasta el delivery con CI/CD.
-              </p>
-              <div class="cta__actions">
-                <a class="btn btn--primary" href="mailto:raymundo.chavez@gmail.com">Enviar email</a>
-                <a class="btn btn--secondary" href="tel:+525639550314">Llamar</a>
-                <a class="btn btn--ghost" href="./CV-Raymundo-Chavez-2026-2.pdf" target="_blank" rel="noreferrer">
-                  Descargar CV
-                </a>
-              </div>
-             
-              <div class="links-row">
-                <a class="link" href="https://github.com/RayChavez" data-placeholder-link>GitHub</a>
-                <span class="sep" aria-hidden="true">·</span>
-                <a class="link" href="https://www.linkedin.com/in/raymundochl/" data-placeholder-link>LinkedIn</a>
-              </div>
-            </div>
-            <div class="cta__card" aria-label="Datos de contacto">
-              <div class="contact-card">
-                <div class="contact-card__row">
-                  <div class="contact-card__k">Email</div>
-                  <div class="contact-card__v">
-                    <a href="mailto:raymundo.chavez@gmail.com">raymundo.chavez@gmail.com</a>
-                  </div>
+                    <!-- Floating metric tags -->
+                    <div class="hero-badges-container reveal-up delay-4">
+                        <div class="hero-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                            <span>14+ Años Exp.</span>
+                        </div>
+                        <div class="hero-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                            <span>60K+ POS Migradas</span>
+                        </div>
+                        <div class="hero-badge">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                            <span>Azure Solutions</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-card__row">
-                  <div class="contact-card__k">Teléfono</div>
-                  <div class="contact-card__v">
-                    <a href="tel:+525639550314">+52 56 3955 0314</a>
-                  </div>
+
+                <!-- Holographic Architecture Terminal Mockup -->
+                <div class="hero-terminal reveal-up delay-3">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <div class="terminal-dot dot-red"></div>
+                                <div class="terminal-dot dot-yellow"></div>
+                                <div class="terminal-dot dot-green"></div>
+                            </div>
+                            <div class="terminal-title">RayChavez.cs — CleanArchitecture</div>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-comment">// Clean Architecture & CQRS Pattern in .NET 8</span>
+<span class="code-keyword">using</span> <span class="code-class">MediatR</span>;
+<span class="code-keyword">using</span> <span class="code-class">Microsoft.AspNetCore.Mvc</span>;
+
+<span class="code-keyword">namespace</span> <span class="code-class">Core.API.Controllers</span>
+{
+    [<span class="code-class">ApiController</span>]
+    [<span class="code-method">Route</span>(<span class="code-string">"api/orders"</span>)]
+    <span class="code-keyword">public</span> <span class="code-keyword">class</span> <span class="code-class">OrdersController</span> : <span class="code-class">ControllerBase</span>
+    {
+        <span class="code-keyword">private</span> <span class="code-keyword">readonly</span> <span class="code-class">IMediator</span> _mediator;
+
+        <span class="code-keyword">public</span> <span class="code-method">OrdersController</span>(<span class="code-class">IMediator</span> mediator) 
+            => _mediator = mediator;
+
+        [<span class="code-class">HttpPost</span>]
+        <span class="code-keyword">public</span> <span class="code-keyword">async</span> <span class="code-class">Task</span>&lt;<span class="code-type">IActionResult</span>&gt; <span class="code-method">Create</span>(
+            [<span class="code-class">FromBody</span>] <span class="code-class">CreateOrderCommand</span> command)
+        {
+            <span class="code-keyword">var</span> orderId = <span class="code-keyword">await</span> _mediator.<span class="code-method">Send</span>(command);
+            <span class="code-keyword">return</span> <span class="code-method">Ok</span>(new { Id = orderId, Status = <span class="code-string">"Created"</span> });
+        }
+    }
+}</code></pre>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-card__row">
-                  <div class="contact-card__k">Ubicación</div>
-                  <div class="contact-card__v">Monterrey, N.L.</div>
-                </div>
-                <div class="contact-card__row">
-                  <div class="contact-card__k">Idioma</div>
-                  <div class="contact-card__v">Español (nativo) · Inglés (intermedio)</div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- About Section with Target Switcher -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Acerca de <span>Mí</span></h2>
+                
+                <!-- Recruiter / Architect Toggle Switcher -->
+                <div class="profile-selector-container reveal-up">
+                    <div class="profile-selector-box">
+                        <button class="profile-btn profile-btn-recruiter active" id="btn-recruiter">Perfil Reclutador TI</button>
+                        <button class="profile-btn profile-btn-architect" id="btn-architect">Perfil Arquitecto SW</button>
+                        <div class="profile-selector-bg" id="selector-bg"></div>
+                    </div>
+                </div>
+
+                <!-- Recruiter Mode Content -->
+                <div class="mode-content active" id="content-recruiter">
+                    <div class="about-grid">
+                        <div class="about-text glass-card">
+                            <p>
+                                Soy un **Líder Técnico** enfocado en resolver problemas complejos de negocio mediante código robusto y arquitectura moderna. Cuento con una sólida trayectoria liderando células ágiles de desarrollo (hasta 12 ingenieros), gestionando salidas a producción críticas y mejorando la calidad técnica de equipos de TI.
+                            </p>
+                            <p>
+                                Me destaco por mi **mentalidad orientada a resultados y fiabilidad**: migré arquitecturas críticas a escala de 60,000+ puntos de venta bajo estricta tolerancia a fallos, y he implementado plataformas e-commerce con procesamiento de pagos multi-país en entornos globales.
+                            </p>
+                            
+                            <ul class="about-bullets">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Liderazgo técnico proactivo con metodologías ágiles (SCRUM) y mentoría.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Experiencia comprobada en sectores de alta exigencia: Retail masivo y E-commerce internacional.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Fácil comunicación técnica y de negocio con stakeholders nacionales e internacionales.</span>
+                                </li>
+                            </ul>
+
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <h3>14+</h3>
+                                    <p>Años Exp.</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>12</h3>
+                                    <p>Ings. a Cargo</p>
+                                </div>
+                                <div class="stat-item">
+                                    <h3>100%</h3>
+                                    <p>Entregas Cloud</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Recruiter Quick Match Checklist -->
+                        <div class="quick-match-card glass-card">
+                            <h4>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                                Reclutador TI Quick Match
+                            </h4>
+                            <p style="margin-bottom: 1rem; font-size: 0.9rem;">
+                                Si tu vacante busca un perfil robusto para llevar el software de tu empresa al siguiente nivel, Raymundo cumple con:
+                            </p>
+                            <ul class="match-list">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>C# / .NET 8 / Web API de nivel Experto</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Arquitectura Cloud Native en Azure</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Liderazgo técnico & Code Reviews</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>CI/CD automatizado & GitOps</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Modernización de software legado</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architect Mode Content -->
+                <div class="mode-content" id="content-architect">
+                    <div class="about-grid">
+                        <div class="about-text glass-card" style="grid-column: span 2;">
+                            <p>
+                                Mi enfoque arquitectónico está fuertemente regido por los principios de **Clean Architecture, Domain-Driven Design (DDD)** y la segregación de responsabilidades mediante **CQRS**. Busco siempre construir aplicaciones acopladas débilmente, altamente testeables y mantenibles en el tiempo, facilitando la paralelización de tareas en equipos complejos.
+                            </p>
+                            <p>
+                                Considero que una excelente arquitectura no es la más compleja, sino la que resuelve la necesidad del negocio con el menor coeficiente de fricción técnica. Automatizo la observabilidad, la telemetría distribuida y aplico rigurosidad en la seguridad desde el diseño base (Security by Design, Azure KeyVault, encriptación en reposo y tránsito).
+                            </p>
+                            
+                            <ul class="about-bullets" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1.5rem;">
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>CQRS con MediatR para desacoplar flujos de lectura y escritura.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Domain-Driven Design (DDD) con agregados bien delimitados.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>CI/CD automatizado en Azure DevOps con infraestructura como código.</span>
+                                </li>
+                                <li>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                                    <span>Optimización extrema de bases de datos T-SQL mediante análisis de planes de ejecución.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="experience section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Trayectoria <span>Profesional</span></h2>
+                
+                <div class="timeline">
+                    <!-- Powerstar -->
+                    <div class="timeline-item reveal-up" id="project-powerstar" data-tech="c# .net azure cqrs clean-architecture payments stripe paypal devops actions containers docker sql prompting antigravity claude-code copilot cursor">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date-badge">07.2025 - Actualidad</span>
+                            <h3>Líder Técnico, Desarrollador Sr.</h3>
+                            <h4>Powerstar</h4>
+                            <p>
+                                Lidero el desarrollo y diseño de la plataforma de comercio electrónico multi-país con operaciones de pago seguras en Estados Unidos, Venezuela y Brasil.
+                            </p>
+                            <ul>
+                                <li>Diseñé e implementé la arquitectura cloud-native en Azure basada en **CQRS + Clean Architecture** para alta disponibilidad.</li>
+                                <li>Desarrollé la integración avanzada con procesadores de pago globales (**Stripe, PayPal**).</li>
+                                <li>Establecí el ecosistema en la nube con pipelines de CI/CD automatizados mediante **GitHub Actions, Docker Containers, y Azure Key Vault**.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET 8</span>
+                                <span class="tag">Azure</span>
+                                <span class="tag">CQRS</span>
+                                <span class="tag">Clean Arch</span>
+                                <span class="tag">Stripe / PayPal</span>
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">AI Coding</span>
+                                <span class="tag">Antigravity</span>
+                                <span class="tag">Cursor</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OXXO -->
+                    <div class="timeline-item reveal-up" id="project-oxxo" data-tech="wpf c# .net monitoring sql t-sql scrum db code-reviews agile dotnet8">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date-badge">2018 - 06.2025</span>
+                            <h3>Líder Técnico, Desarrollador Sr.</h3>
+                            <h4>Oxxo</h4>
+                            <p>
+                                Responsable de sistemas de punto de venta (POS) y plataformas críticas de monitoreo corporativo en la empresa líder de retail en México con +22,000 tiendas operando 24/7.
+                            </p>
+                            <ul>
+                                <li>Diseñé y coordiné la migración masiva de sistemas operativos Windows 7 a 10 en **+60,000 POS** mediante una aplicación WPF inteligente, logrando reducir el tiempo del proceso operativo en un **60%**.</li>
+                                <li>Lideré como Scrum Master una célula ágil de 12 ingenieros, gestionando revisiones de código profundas, arquitectura interna y lanzamientos a producción.</li>
+                                <li>Desarrollé un dashboard de telemetría y monitoreo de red y base de datos en tiempo real que permitió prevenir incidentes de caída de facturación en tiendas críticas.</li>
+                                <li>Migré la plataforma web core de .NET Framework 4.6 a **.NET 8** reduciendo costos de consumo de cómputo.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">WPF</span>
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET 8</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">Scrum</span>
+                                <span class="tag">Telemetría</span>
+                                <span class="tag">Code Reviews</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Azzule -->
+                    <div class="timeline-item reveal-up" id="project-azzule" data-tech="c# .net web-api angular sql t-sql architecture integration">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date-badge">2021 - 2023</span>
+                            <h3>Desarrollador Sr. / Consultor de Software</h3>
+                            <h4>Azzule</h4>
+                            <p>
+                                Consultor de arquitectura y desarrollo de sistemas empresariales B2B para clientes líderes nacionales como HEB México, Sigma Alimentos y Caintra.
+                            </p>
+                            <ul>
+                                <li>Estructuré el backend y módulos de integración del portal transaccional de proveedores y control de mercancías de **HEB**.</li>
+                                <li>Desarrollé el portal de punta a punta para proveedores y arrendamiento en el Centro de Convenciones Cintermex (**Caintra**).</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">ASP.NET Web API</span>
+                                <span class="tag">Angular</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">B2B Integrations</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Seven Eleven -->
+                    <div class="timeline-item reveal-up" id="project-seveneleven" data-tech="vue vue.js javascript frontend sql t-sql performance database optimization">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date-badge">2016 - 2018</span>
+                            <h3>Desarrollador Sr.</h3>
+                            <h4>Seven Eleven</h4>
+                            <p>
+                                Mantenimiento y optimización de sistemas internos y portales de servicios tecnológicos.
+                            </p>
+                            <ul>
+                                <li>Lideré la modernización del portal de laboratorios migrando código legacy a **Vue.js**, reduciendo significativamente los costos de mantenimiento preventivo.</li>
+                                <li>Optimicé el rendimiento de la base de datos SQL Server reescribiendo y tunando procedimientos almacenados y modelado de índices complejos.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SQL Server</span>
+                                <span class="tag">Database Tuning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AXEN.pro -->
+                    <div class="timeline-item reveal-up" id="project-axen" data-tech="c# .net scrum automation database scaling integration">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date-badge">2011 - 2016</span>
+                            <h3>Desarrollador Sr.</h3>
+                            <h4>AXEN.pro</h4>
+                            <p>
+                                Implementación de soluciones de software contable y de procesos de negocios a la medida.
+                            </p>
+                            <ul>
+                                <li>Diseñé e implementé la automatización de procesamiento contable a gran escala, reduciendo el tiempo de generación de pólizas de **72 horas a tan solo 30 minutos**.</li>
+                                <li>Introduje la metodología ágil **SCRUM** en la organización como pionero, acelerando la entrega de features en un 35%.</li>
+                            </ul>
+                            <div class="project-tags">
+                                <span class="tag">C#</span>
+                                <span class="tag">.NET Framework</span>
+                                <span class="tag">SCRUM</span>
+                                <span class="tag">Automatización</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clean Architecture Dynamic Interactive Section -->
+        <section id="architecture" class="architecture section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Arquitectura <span>Limpia Interactiva</span></h2>
+                
+                <div class="architecture-container reveal-up">
+                    
+                    <!-- Dynamic Layer Diagram -->
+                    <div class="architecture-visual">
+                        <svg class="arch-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Outer Ring: Presentation / UI -->
+                            <g id="layer-presentation" class="arch-layer active" data-layer="presentation">
+                                <circle cx="200" cy="200" r="180" fill="rgba(6, 182, 212, 0.04)" stroke="#06b6d4" stroke-width="2" stroke-dasharray="4 4" />
+                                <text x="200" y="38" text-anchor="middle" fill="#06b6d4" font-size="11" font-weight="bold" font-family="Outfit">PRESENTATION / WEB API</text>
+                            </g>
+                            <!-- Middle Outer Ring: Infrastructure -->
+                            <g id="layer-infrastructure" class="arch-layer" data-layer="infrastructure">
+                                <circle cx="200" cy="200" r="135" fill="rgba(59, 130, 246, 0.04)" stroke="#3b82f6" stroke-width="2" />
+                                <text x="200" y="80" text-anchor="middle" fill="#3b82f6" font-size="11" font-weight="bold" font-family="Outfit">INFRASTRUCTURE</text>
+                            </g>
+                            <!-- Middle Inner Ring: Application -->
+                            <g id="layer-application" class="arch-layer" data-layer="application">
+                                <circle cx="200" cy="200" r="95" fill="rgba(139, 92, 246, 0.04)" stroke="#8b5cf6" stroke-width="2" />
+                                <text x="200" y="120" text-anchor="middle" fill="#8b5cf6" font-size="11" font-weight="bold" font-family="Outfit">APPLICATION (CQRS)</text>
+                            </g>
+                            <!-- Center: Domain -->
+                            <g id="layer-domain" class="arch-layer" data-layer="domain">
+                                <circle cx="200" cy="200" r="55" fill="rgba(244, 63, 94, 0.06)" stroke="#f43f5e" stroke-width="2.5" />
+                                <text x="200" y="195" text-anchor="middle" fill="#f43f5e" font-size="12" font-weight="bold" font-family="Outfit">DOMAIN</text>
+                                <text x="200" y="210" text-anchor="middle" fill="#94a3b8" font-size="9" font-family="Consolas">Core Logic</text>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Dynamic Layer Details Card -->
+                    <div class="architecture-desc-card glass-card">
+                        <span class="layer-tag" id="arch-layer-tag">Capa: Externa</span>
+                        <h3 id="arch-layer-title">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                            Presentation / Web API
+                        </h3>
+                        <p id="arch-layer-desc">
+                            Capa de entrada al sistema. Contiene los Controladores REST, filtros de API, middleware personalizado, autenticación (Azure AD, JWT) y documentación OpenAPI. No contiene lógica de negocio; solo valida el formato HTTP y delega la ejecución de comandos y consultas directamente al mediador de la capa de aplicación.
+                        </p>
+                        <div class="layer-tech-chips" id="arch-layer-techs">
+                            <span class="tag chip-blue">ASP.NET Core API</span>
+                            <span class="tag chip-blue">Angular</span>
+                            <span class="tag chip-blue">WPF App</span>
+                            <span class="tag chip-blue">Controllers</span>
+                            <span class="tag chip-blue">MediatR trigger</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Technologies & Smart Interactive Filter Section -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Mis <span>Tecnologías</span></h2>
+                
+                <p class="skills-intro reveal-up">
+                    Escribe una tecnología o haz clic en cualquiera de las listas para filtrar e iluminar los proyectos de la línea de tiempo donde las he implementado en producción.
+                </p>
+
+                <!-- Interactive Search Bar -->
+                <div class="filter-bar reveal-up">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" class="filter-input" id="skills-search" placeholder="Buscar tecnología (ej. Azure, C#, WPF, Docker)...">
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Backend -->
+                    <div class="skill-category glass-card reveal-up delay-1">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                            Backend
+                        </h3>
+                        <ul class="skill-list" id="list-backend">
+                            <data-item data-tag="c#">C# / .NET 8 <span class="skill-badge badge-lead">Experto</span></data-item>
+                            <data-item data-tag="dotnet8">.NET Core / MVC <span class="skill-badge badge-lead">Experto</span></data-item>
+                            <data-item data-tag="web-api">REST Web API <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="integration">Microservicios REST <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="javascript">Node.js (Básico) <span class="skill-badge badge-core">Core</span></data-item>
+                        </ul>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="skill-category glass-card reveal-up delay-2">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a6 6 0 0 0 0-12z"/></svg>
+                            Cloud & DevOps
+                        </h3>
+                        <ul class="skill-list" id="list-devops">
+                            <data-item data-tag="azure">Azure Cloud <span class="skill-badge badge-lead">Líder</span></data-item>
+                            <data-item data-tag="devops">Azure DevOps (CI/CD) <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="actions">GitHub Actions <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="docker">Docker / Containers <span class="skill-badge badge-core">Core</span></data-item>
+                            <data-item data-tag="git">Git Version Control <span class="skill-badge badge-core">Core</span></data-item>
+                        </ul>
+                    </div>
+
+                    <!-- Architecture -->
+                    <div class="skill-category glass-card reveal-up delay-3">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            Arquitectura
+                        </h3>
+                        <ul class="skill-list" id="list-architecture">
+                            <data-item data-tag="clean-architecture">Clean Architecture <span class="skill-badge badge-lead">Líder</span></data-item>
+                            <data-item data-tag="cqrs">CQRS Pattern <span class="skill-badge badge-lead">Líder</span></data-item>
+                            <data-item data-tag="ddd">DDD (Domain-Driven) <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="design-patterns">Patrones de Diseño <span class="skill-badge badge-expert">Experto</span></data-item>
+                        </ul>
+                    </div>
+
+                    <!-- Frontend & Data -->
+                    <div class="skill-category glass-card reveal-up delay-4">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="22" y2="7"/><line x1="2" y1="17" x2="22" y2="17"/></svg>
+                            Frontend & Data
+                        </h3>
+                        <ul class="skill-list" id="list-frontend">
+                            <data-item data-tag="angular">Angular (v2 - v19) <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="vue">Vue.js / TS / JS <span class="skill-badge badge-core">Core</span></data-item>
+                            <data-item data-tag="sql">SQL Server / T-SQL <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="cosmosdb">Cosmos DB <span class="skill-badge badge-core">Core</span></data-item>
+                            <data-item data-tag="wpf">WPF Desktop (C#) <span class="skill-badge badge-lead">Líder</span></data-item>
+                        </ul>
+                    </div>
+
+                    <!-- IA & Herramientas de Dev -->
+                    <div class="skill-category glass-card reveal-up">
+                        <h3>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/><circle cx="12" cy="12" r="4"/></svg>
+                            IA & Herramientas
+                        </h3>
+                        <ul class="skill-list" id="list-ai">
+                            <data-item data-tag="prompting">Prompting / AI Collab <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="antigravity">Antigravity Agent <span class="skill-badge badge-lead">Líder</span></data-item>
+                            <data-item data-tag="claude-code">Claude Code / Gemini <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="copilot">Copilot / AI Tools <span class="skill-badge badge-expert">Experto</span></data-item>
+                            <data-item data-tag="cursor">Cursor / VS Code <span class="skill-badge badge-expert">Experto</span></data-item>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications -->
+        <section id="education" class="education section-padding">
+            <div class="container">
+                <h2 class="section-title reveal-up">Educación & <span>Certificaciones</span></h2>
+
+                <div class="edu-grid">
+                    <!-- Academic -->
+                    <div class="edu-card glass-card reveal-up">
+                        <div class="edu-header">
+                            <div class="edu-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/></svg>
+                            </div>
+                            <div>
+                                <h3>Ingeniería Computacional</h3>
+                                <p class="edu-date">2024</p>
+                            </div>
+                        </div>
+                        <p>Título de Grado Universitario.</p>
+                        <p style="font-size: 0.9rem; margin-top: 5px; color: var(--text-muted);">Titulado formalmente por acreditación de trayectoria y experiencia profesional sobresaliente.</p>
+                    </div>
+
+                    <!-- Azure Certs -->
+                    <div class="edu-card glass-card reveal-up delay-1">
+                        <div class="edu-header">
+                            <div class="edu-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                            </div>
+                            <div>
+                                <h3>Certificaciones Azure</h3>
+                                <p class="edu-date">Microsoft Certified</p>
+                            </div>
+                        </div>
+                        <ul class="cert-list">
+                            <li>Microsoft Certified: Azure Big Data Solutions Specialty</li>
+                            <li>Developing Microsoft Azure and Web Services (Exam 70-532)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Web & Angular Certs -->
+                    <div class="edu-card glass-card reveal-up delay-2">
+                        <div class="edu-header">
+                            <div class="edu-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            </div>
+                            <div>
+                                <h3>Especialidades Web</h3>
+                                <p class="edu-date">Ecosistemas Frameworks</p>
+                            </div>
+                        </div>
+                        <ul class="cert-list">
+                            <li>Desarrollo Avanzado Angular 19 y ASP.NET Core 9</li>
+                            <li>Developing ASP.NET MVC Web Applications (Exam 70-486)</li>
+                            <li>Programming in HTML5 with JavaScript and CSS3 (Exam 70-480)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="contact-box glass-card reveal-up">
+                    <h2 class="section-title">¿Listo para construir el <span>futuro?</span></h2>
+                    <p>
+                        Si buscas un líder técnico o consultor especialista en la nube para llevar tus arquitecturas de software al siguiente nivel con metodologías claras y altos estándares de calidad, contáctame ahora.
+                    </p>
+
+                    <!-- Click-to-copy cards for Recruiters -->
+                    <div class="contact-grid">
+                        <div class="contact-item-card" onclick="copyContact('raymundo.chavez@gmail.com', this)">
+                            <div class="contact-card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <h5>Correo Electrónico</h5>
+                            <span>raymundo.chavez@gmail.com</span>
+                            <div class="copy-tooltip">¡Copiado!</div>
+                        </div>
+
+                        <div class="contact-item-card" onclick="copyContact('+525639550314', this)">
+                            <div class="contact-card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <h5>Teléfono de Contacto</h5>
+                            <span>+52 (56) 3955.0314</span>
+                            <div class="copy-tooltip">¡Copiado!</div>
+                        </div>
+
+                        <div class="contact-item-card" style="cursor: default;">
+                            <div class="contact-card-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <h5>Ubicación Base</h5>
+                            <span>Monterrey N.L., México</span>
+                        </div>
+                    </div>
+
+                    <!-- Social Network Buttons -->
+                    <div class="social-links">
+                        <a href="https://github.com/RayChavez" target="_blank" rel="noopener noreferrer" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            GitHub Profile
+                        </a>
+                        <a href="https://www.linkedin.com/in/raymundochl/" target="_blank" rel="noopener noreferrer" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            LinkedIn Connect
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer__inner">
-        <p class="muted small">
-          © <span data-year></span> Raymundo Chávez. Hecho con HTML/CSS/JS.
-        </p>
-        <a class="link small" href="#inicio">Volver arriba</a>
-      </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Raymundo Chavez. Diseñado con altos estándares de arquitectura y UX.</p>
+        </div>
     </footer>
 
-    <script src="./script.js" defer></script>
-  </body>
+    <script src="script.js"></script>
+</body>
+
 </html>
